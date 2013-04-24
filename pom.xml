@@ -1,11 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.xiam</groupId>
     <artifactId>fred</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
@@ -122,7 +120,7 @@
                 <version>1.7</version>
                 <configuration>
                     <target name="default_operation">
-                        <echo message="Running ant"/>
+                        <echo message="Running ant" />
                     </target>
                 </configuration>
                 <executions>
@@ -131,7 +129,7 @@
                         <phase>clean</phase>
                         <configuration>
                             <target name="clean_operation">
-                                <echo message="Cleaning ${project.name}"/>
+                                <echo message="Cleaning ${project.name}" />
                             </target>
                         </configuration>
                         <goals>
@@ -143,8 +141,8 @@
                         <phase>initialize</phase>
                         <configuration>
                             <target name="init_operation">
-                                <echo message="WELCOME TO ${project.name}"/>
-                                <echo message="======================="/>
+                                <echo message="WELCOME TO ${project.name}" />
+                                <echo message="=======================" />
                             </target>
                         </configuration>
                         <goals>
@@ -250,7 +248,7 @@
                                 <phase>process-resources</phase>
                                 <configuration>
                                     <target name="process_resources_operation">
-                                        <echo message="Process Resources For ${project.name}"/>
+                                        <echo message="Process Resources For ${project.name}" />
                                     </target>
                                 </configuration>
                                 <goals>
